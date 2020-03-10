@@ -1,0 +1,46 @@
+{
+    "variants": {
+        "eggs=0": [
+            { "model": "incubation:block/empty_chicken_nest" },
+            { "model": "incubation:block/empty_chicken_nest", "y": 90 },
+            { "model": "incubation:block/empty_chicken_nest", "y": 180 },
+            { "model": "incubation:block/empty_chicken_nest", "y": 270 }
+        ],
+        "eggs=1": [
+            { "model": "incubation:block/chicken_nest_one_egg" },
+            { "model": "incubation:block/chicken_nest_one_egg", "y": 90 },
+            { "model": "incubation:block/chicken_nest_one_egg", "y": 180 },
+            { "model": "incubation:block/chicken_nest_one_egg", "y": 270 }
+        ],
+        "eggs=2": [
+            { "model": "incubation:block/chicken_nest_two_eggs" },
+            { "model": "incubation:block/chicken_nest_two_eggs", "y": 90 },
+            { "model": "incubation:block/chicken_nest_two_eggs", "y": 180 },
+            { "model": "incubation:block/chicken_nest_two_eggs", "y": 270 }
+        ],
+        "eggs=3": [
+            { "model": "incubation:block/chicken_nest_three_eggs" },
+            { "model": "incubation:block/chicken_nest_three_eggs", "y": 90 },
+            { "model": "incubation:block/chicken_nest_three_eggs", "y": 180 },
+            { "model": "incubation:block/chicken_nest_three_eggs", "y": 270 }
+        ],
+        "eggs=4": [
+            { "model": "incubation:block/chicken_nest_four_eggs" },
+            { "model": "incubation:block/chicken_nest_four_eggs", "y": 90 },
+            { "model": "incubation:block/chicken_nest_four_eggs", "y": 180 },
+            { "model": "incubation:block/chicken_nest_four_eggs", "y": 270 }
+        ],
+        "eggs=5": [
+            { "model": "incubation:block/chicken_nest_five_eggs" },
+            { "model": "incubation:block/chicken_nest_five_eggs", "y": 90 },
+            { "model": "incubation:block/chicken_nest_five_eggs", "y": 180 },
+            { "model": "incubation:block/chicken_nest_five_eggs", "y": 270 }
+        ],
+        "eggs=6": [
+            { "model": "incubation:block/chicken_nest_six_eggs" },
+            { "model": "incubation:block/chicken_nest_six_eggs", "y": 90 },
+            { "model": "incubation:block/chicken_nest_six_eggs", "y": 180 },
+            { "model": "incubation:block/chicken_nest_six_eggs", "y": 270 }
+        ]
+    }
+}
