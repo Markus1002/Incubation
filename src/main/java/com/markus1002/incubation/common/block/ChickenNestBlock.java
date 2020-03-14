@@ -13,6 +13,7 @@ import net.minecraft.item.Items;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
@@ -45,7 +46,7 @@ public class ChickenNestBlock extends ContainerBlock
 		return !stateIn.isValidPosition(worldIn, currentPos) ? Blocks.AIR.getDefaultState() : super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
 	}
 
-	public boolean onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit)
+	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit)
 	{
 		if (player.isAllowEdit())
 		{
@@ -61,7 +62,7 @@ public class ChickenNestBlock extends ContainerBlock
 					}
 					worldIn.setBlockState(pos, state.with(EGGS, Integer.valueOf(i + 1)), 2);
 
-					return true;
+					return ActionResultType.SUCCESS;
 				}
 			}
 			if (i > 0)
@@ -69,9 +70,9 @@ public class ChickenNestBlock extends ContainerBlock
 				spawnAsEntity(worldIn, pos, new ItemStack(Items.EGG));
 				worldIn.setBlockState(pos, state.with(EGGS, Integer.valueOf(i - 1)), 2);
 
-				return true;
+				return ActionResultType.SUCCESS;
 			}
-			return false;
+			return ActionResultType.PASS;
 		}
 		else
 		{

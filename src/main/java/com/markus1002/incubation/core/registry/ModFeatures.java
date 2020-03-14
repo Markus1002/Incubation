@@ -6,8 +6,6 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.GenerationStage.Decoration;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
@@ -43,11 +41,11 @@ public class ModFeatures
 		{
 			if (BiomeDictionary.getTypes(biome).contains(Type.FOREST) && doesCreatureSpawnInBiome(EntityType.CHICKEN, EntityClassification.CREATURE, biome))
 			{
-				addFeatureToBiome(biome, GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(CHICKEN_NEST, IFeatureConfig.NO_FEATURE_CONFIG, Placement.CHANCE_HEIGHTMAP_DOUBLE, new ChanceConfig(32)));
+				biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, CHICKEN_NEST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(32))));
 			}
 		}
 	}
-	
+
 	private static boolean doesCreatureSpawnInBiome(EntityType<?> entityType, EntityClassification classification, Biome biome)
 	{
 		for (Biome.SpawnListEntry entry : biome.getSpawns(classification))
@@ -59,13 +57,5 @@ public class ModFeatures
 		}
 
 		return false;
-	}
-
-	private static void addFeatureToBiome(Biome biome, Decoration decorationStage, ConfiguredFeature<?> configuredFeature)
-	{
-		if(!biome.getFeatures(decorationStage).contains(configuredFeature))
-		{
-			biome.addFeature(decorationStage, configuredFeature);
-		}
 	}
 }
