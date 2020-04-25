@@ -41,7 +41,7 @@ public class ModFeatures
 		{
 			if (BiomeDictionary.getTypes(biome).contains(Type.FOREST) && doesCreatureSpawnInBiome(EntityType.CHICKEN, EntityClassification.CREATURE, biome))
 			{
-				biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, CHICKEN_NEST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(40))));
+				biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, CHICKEN_NEST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(32))));
 			}
 		}
 	}
