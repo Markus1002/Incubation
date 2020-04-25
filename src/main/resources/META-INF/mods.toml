@@ -3,11 +3,11 @@ loaderVersion="[29,)"
 issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/incubation/issues"
 [[mods]]
 modId="incubation"
-version="1.0.2"
+version="1.0.3"
 displayName="Incubation"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/incubation"
 logoFile="logo.png"
-credits="Markus1002"
+credits="Markus1002, Translators: vhslance, F4zzer, peehpeh"
 authors="Markus1002"
 description='''Adds chicken nests and makes eggs more useful.'''
 [[dependencies.incubation]]

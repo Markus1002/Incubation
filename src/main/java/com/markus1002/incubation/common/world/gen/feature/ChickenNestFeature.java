@@ -26,7 +26,7 @@ public class ChickenNestFeature extends Feature<NoFeatureConfig>
 
 	public boolean place(IWorld worldIn, ChunkGenerator<? extends GenerationSettings> generator, Random rand, BlockPos pos, NoFeatureConfig config)
 	{
-		BlockState blockstate = ModBlocks.CHICKEN_NEST.getDefaultState().with(ChickenNestBlock.EGGS, 2 + rand.nextInt(3));
+		BlockState blockstate = ModBlocks.CHICKEN_NEST.getDefaultState().with(ChickenNestBlock.EGGS, 1 + rand.nextInt(3));
 
 		int i = worldIn.getHeight(Heightmap.Type.WORLD_SURFACE, pos.getX(), pos.getZ());
 		BlockPos blockpos = new BlockPos(pos.getX(), i, pos.getZ());
