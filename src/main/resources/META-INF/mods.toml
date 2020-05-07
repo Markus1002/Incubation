@@ -3,7 +3,7 @@ loaderVersion="[29,)"
 issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/incubation/issues"
 [[mods]]
 modId="incubation"
-version="1.0.3"
+version="1.0.4"
 displayName="Incubation"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/incubation"
 logoFile="logo.png"
