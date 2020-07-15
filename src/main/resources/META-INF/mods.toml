@@ -1,24 +1,24 @@
 modLoader="javafml"
-loaderVersion="[29,)"
-issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/incubation/issues"
+loaderVersion="[31,)"
+issueTrackerURL="https://github.com/Markus1002/Incubation/issues"
 [[mods]]
 modId="incubation"
-version="1.0.4"
+version="1.1.0"
 displayName="Incubation"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/incubation"
 logoFile="logo.png"
-credits="Markus1002, Translators: vhslance, F4zzer, peehpeh"
+credits="Markus1002, Translators: vhslance, F4zzer, peehpeh, xM4RCOSx, XanaSago, Rye"
 authors="Markus1002"
 description='''Adds chicken nests and makes eggs more useful.'''
 [[dependencies.incubation]]
     modId="forge"
     mandatory=true
-    versionRange="[29,)"
+    versionRange="[32.0.57,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.incubation]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.16.1]"
     ordering="NONE"
     side="BOTH"

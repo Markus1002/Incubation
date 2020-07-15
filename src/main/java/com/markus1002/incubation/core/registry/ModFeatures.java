@@ -21,7 +21,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModFeatures
 {
-	public static final Feature<NoFeatureConfig> CHICKEN_NEST = new ChickenNestFeature(NoFeatureConfig::deserialize);
+	public static final Feature<NoFeatureConfig> CHICKEN_NEST = new ChickenNestFeature(NoFeatureConfig.field_236558_a_);
 
 	@SubscribeEvent
 	public static void registerFeatures(RegistryEvent.Register<Feature<?>> event)
